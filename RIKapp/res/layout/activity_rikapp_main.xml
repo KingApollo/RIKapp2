@@ -16,6 +16,7 @@
         android:layout_alignBottom="@+id/hygbtn"
         android:layout_marginLeft="45dp"
         android:layout_toRightOf="@+id/hygbtn"
+        android:onClick="maalClick"
         android:text="@+string/maaling_btn" />
 
     <Button

@@ -41,4 +41,10 @@ public class RIKappMainActivity extends Activity {
     	Intent intent = new Intent(this, Hyg.class);
     	startActivity(intent);
     }
+    
+    public void maalClick(View view)
+    {
+    	Intent intent = new Intent(this, Maalinger.class);
+    	startActivity(intent);
+    }
 }
