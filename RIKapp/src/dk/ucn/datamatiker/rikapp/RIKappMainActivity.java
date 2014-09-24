@@ -1,9 +1,11 @@
 package dk.ucn.datamatiker.rikapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class RIKappMainActivity extends Activity {
@@ -32,5 +34,11 @@ public class RIKappMainActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+    
+    public void hygClick(View view)
+    {
+    	Intent intent = new Intent(this, Hyg.class);
+    	startActivity(intent);
     }
 }
