@@ -18,11 +18,16 @@ public class Maalinger extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_maalinger);
-		TextView day = (TextView) findViewById(R.id.day);
+		TextView time_display = (TextView) findViewById(R.id.time_display);
 		Calendar c = Calendar.getInstance();
 		SimpleDateFormat dayFormat = new SimpleDateFormat("EEEE", Locale.getDefault());
 		String weekDay = dayFormat.format(c.getTime());
-		day.setText(weekDay);
+		SimpleDateFormat df = new SimpleDateFormat("dd/M");
+		SimpleDateFormat tf = new SimpleDateFormat("HH:mm");
+		String date = df.format(c.getTime());
+		String time = tf.format(c.getTime());
+		String outputText = "Målling for " + weekDay + " d. " + date + " , kl " + time;
+		time_display.setText(outputText);
 	}
 
 	@Override
