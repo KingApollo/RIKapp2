@@ -47,4 +47,10 @@ public class RIKappMainActivity extends Activity {
     	Intent intent = new Intent(this, Maalinger.class);
     	startActivity(intent);
     }
+    
+    public void skemaClick(View view){
+    	Intent intent = new Intent(this, Skema.class);
+    	startActivity(intent);
+    }
+    
 }

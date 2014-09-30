@@ -5,11 +5,11 @@ import java.util.Calendar;
 import java.util.Locale;
 
 import android.app.Activity;
-import android.content.Intent;
+
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.EditText;
+
 import android.widget.TextView;
 
 public class Maalinger extends Activity {

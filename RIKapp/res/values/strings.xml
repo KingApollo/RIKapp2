@@ -8,5 +8,7 @@
     <string name="hygiejne_btn">Hygiejne</string>
     <string name="maaling_btn">Måling</string>
     <string name="title_activity_maalinger">Maalinger</string>
+    <string name="skema_btn">Skema</string>
+    <string name="title_activity_skema">Skema</string>
 
 </resources>

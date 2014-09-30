@@ -27,7 +27,18 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="76dp"
-        android:onClick="hygClick"
+        android:onClick="hygclick"
         android:text="@+string/hygiejne_btn" />
+
+    <Button
+        android:id="@+id/skema"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/maalbtn"
+        android:layout_below="@+id/maalbtn"
+        android:layout_marginTop="37dp"
+        android:onClick="skemaClick"
+        android:text="@string/skema_btn" />
 
 </RelativeLayout>
