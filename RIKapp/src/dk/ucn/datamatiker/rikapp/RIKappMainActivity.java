@@ -16,7 +16,7 @@ public class RIKappMainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rikapp_main);
         
-        Button skemaBtn = (Button)findViewById(R.id.skema);
+        Button skemaBtn = (Button)findViewById(R.id.skemabtn);
         skemaBtn.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
