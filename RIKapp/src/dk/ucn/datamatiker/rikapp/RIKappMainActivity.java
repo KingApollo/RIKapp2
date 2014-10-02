@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 
 public class RIKappMainActivity extends Activity {
@@ -14,6 +15,17 @@ public class RIKappMainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rikapp_main);
+        
+        Button skemaBtn = (Button)findViewById(R.id.skema);
+        skemaBtn.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(RIKappMainActivity.this, Skema.class);
+		    	startActivity(intent);
+				
+			}
+		});
     }
 
 
@@ -48,9 +60,5 @@ public class RIKappMainActivity extends Activity {
     	startActivity(intent);
     }
     
-    public void skemaClick(View view){
-    	Intent intent = new Intent(this, Skema.class);
-    	startActivity(intent);
-    }
     
 }
