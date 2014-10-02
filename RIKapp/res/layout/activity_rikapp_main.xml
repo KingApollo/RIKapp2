@@ -31,7 +31,7 @@
         android:text="@+string/hygiejne_btn" />
 
     <Button
-        android:id="@+id/skema"
+        android:id="@+id/skemabtn"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
