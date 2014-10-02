@@ -16,7 +16,6 @@
         android:layout_alignBottom="@+id/hygbtn"
         android:layout_marginLeft="45dp"
         android:layout_toRightOf="@+id/hygbtn"
-        android:onClick="maalClick"
         android:text="@+string/maaling_btn" />
 
     <Button
@@ -27,7 +26,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="76dp"
-        android:onClick="hygclick"
         android:text="@+string/hygiejne_btn" />
 
     <Button

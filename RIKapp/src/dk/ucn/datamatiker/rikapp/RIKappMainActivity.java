@@ -26,6 +26,26 @@ public class RIKappMainActivity extends Activity {
 				
 			}
 		});
+        
+        Button maalBtn = (Button)findViewById(R.id.maalbtn);
+        maalBtn.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(RIKappMainActivity.this, Maalinger.class);
+		    	startActivity(intent);
+			}
+		});
+        
+        Button hygBtn = (Button)findViewById(R.id.hygbtn);
+        hygBtn.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(RIKappMainActivity.this, Hyg.class);
+		    	startActivity(intent);
+			}
+		});
     }
 
 
@@ -46,18 +66,6 @@ public class RIKappMainActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-    
-    public void hygClick(View view)
-    {
-    	Intent intent = new Intent(this, Hyg.class);
-    	startActivity(intent);
-    }
-    
-    public void maalClick(View view)
-    {
-    	Intent intent = new Intent(this, Maalinger.class);
-    	startActivity(intent);
     }
     
     
