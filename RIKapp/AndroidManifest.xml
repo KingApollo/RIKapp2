@@ -36,6 +36,10 @@
             android:name=".Skema"
             android:label="@string/title_activity_skema" >
         </activity>
+        <activity
+            android:name=".Kontakt"
+            android:label="@string/title_activity_kontakt" >
+        </activity>
     </application>
 
 </manifest>
