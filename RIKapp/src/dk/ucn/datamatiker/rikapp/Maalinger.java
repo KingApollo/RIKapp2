@@ -1,6 +1,7 @@
 package dk.ucn.datamatiker.rikapp;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
 
@@ -9,31 +10,60 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
+import android.widget.Button;
 import android.widget.TextView;
 
 public class Maalinger extends Activity {
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
 		setContentView(R.layout.activity_maalinger);
-		TextView time_display = (TextView) findViewById(R.id.time_display);
-		Calendar c = Calendar.getInstance();
-		SimpleDateFormat dayFormat = new SimpleDateFormat("EEEE", Locale.getDefault());
-		String weekDay = dayFormat.format(c.getTime());
-		SimpleDateFormat df = new SimpleDateFormat("dd/M");
-		SimpleDateFormat tf = new SimpleDateFormat("HH:mm");
-		String date = df.format(c.getTime());
-		String time = tf.format(c.getTime());
-		String outputText = "Målling for " + weekDay + " d. " + date + " , kl " + time;
-		time_display.setText(outputText);
+		
+		Button getAll = (Button)findViewById(R.id.getAll);
+		getAll.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				MySQLiteHelper db = new MySQLiteHelper(v.getContext());
+				ArrayList<Maaling> mList = new ArrayList<Maaling>();
+				mList = db.getAllMaalinger();
+				for(int i = 0; i < mList.size(); i++)
+				{
+					System.out.println("TIME= " + mList.get(i).getTime() + " DATE= " + mList.get(i).getDate());
+				}
+			}
+		});
+		
+		Button createBtn = (Button)findViewById(R.id.Save_btn);
+        createBtn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				SimpleDateFormat df = new SimpleDateFormat("dd/M");
+				SimpleDateFormat tf = new SimpleDateFormat("HH:mm");
+				Calendar c = Calendar.getInstance();
+				MySQLiteHelper db = new MySQLiteHelper(v.getContext());
+				
+				TextView mlInput = (TextView) findViewById(R.id.mlInput);
+				String date = df.format(c.getTime());
+				String time = tf.format(c.getTime());
+				Maaling m = new Maaling(time,date, Integer.parseInt(mlInput.getText().toString()));
+				
+				db.insertMaaling(m);
+				mlInput.setText("");
+				mlInput.clearFocus();
+				}
+		});
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.maalinger, menu);
+        
 		return true;
 	}
 

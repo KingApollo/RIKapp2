@@ -14,9 +14,40 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="62dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="22dp"
         android:text="Heeey" />
+
+    <EditText
+        android:id="@+id/mlInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/time_display"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="ML!" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/Save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/mlInput"
+        android:layout_below="@+id/mlInput"
+        android:layout_marginTop="72dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/getAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Save_btn"
+        android:layout_alignLeft="@+id/mlInput"
+        android:text="Button" />
 
 </RelativeLayout>
 
