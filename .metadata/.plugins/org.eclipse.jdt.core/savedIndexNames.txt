@@ -1,5 +1,2 @@
-INDEX VERSION 1.126+D:\UCN\4. Semester\Android\RIK\.metadata\.plugins\org.eclipse.jdt.core
+INDEX VERSION 1.126+C:\Users\Kim\Documents\RIKapp2\.metadata\.plugins\org.eclipse.jdt.core
 394705304.index
-1980628806.index
-563108683.index
-799857344.index
