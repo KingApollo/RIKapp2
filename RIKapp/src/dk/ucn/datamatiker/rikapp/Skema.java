@@ -64,9 +64,8 @@ public class Skema extends Activity {
 				maalList.add(dbMaalList.get(i));
 				
 			}else{
-				
 				maalDate.add(maalList);
-				maalList.clear();
+				maalList = null;
 				newestDate = dbMaalList.get(i).getDate();
 				maalList = new ArrayList<Maaling>();
 				maalList.add(dbMaalList.get(i));
@@ -76,8 +75,7 @@ public class Skema extends Activity {
 			
 		for(int i = 0; i< maalDate.size(); i++)
 		{
-		      System.out.println("maalDate idex!! " + i);
-		      
+			  System.out.println("Dette er dato nr = " + i);
 		      for(int k = 0; k < maalDate.get(i).size(); k++)
 		      {
 		           Maaling m = (Maaling) maalDate.get(i).get(k);
