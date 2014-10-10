@@ -9,10 +9,22 @@
     tools:context="dk.ucn.datamatiker.rikapp.HowOften" >
 
  <TextView
+    android:id="@+id/tvHowOftenQuestion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/howOftenQuestion"
+    android:textSize="22sp"
+    android:textStyle="bold" />
+ 
+  <TextView
     android:id="@+id/tvHowOftenAnswer"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/howOftenAnswer"
-    android:textSize="18sp" />
+    android:layout_below="@+id/tvHowOftenQuestion"
+    android:textSize="18sp"
+    />
+ 
+ 
 
 </RelativeLayout>

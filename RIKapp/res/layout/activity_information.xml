@@ -17,4 +17,60 @@
             android:onClick="toggle_contents"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
+<TextView
+    android:id="@+id/tvWhenBladderQuestion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/tvHowOftenQuestion"
+    android:layout_below="@+id/tvHowOftenQuestion"
+    android:clickable="true"
+    android:onClick="toggle_contents"
+    android:text="@string/whenBladderQuestion"
+    android:textSize="22sp" />
+
+<TextView
+    android:id="@+id/tvDoesItHurtQuestion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/tvHowOftenQuestion"
+    android:layout_below="@+id/tvWhenBladderQuestion"
+    android:clickable="true"
+    android:onClick="toggle_contents"
+    android:text="@string/doesItHurtQuestion"
+    android:textSize="22sp" />
+
+<TextView
+    android:id="@+id/tvWhyBloodQuestion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/tvHowOftenQuestion"
+    android:layout_below="@+id/tvDoesItHurtQuestion"
+    android:clickable="true"
+    android:onClick="toggle_contents"
+    android:text="@string/whyBloodQuestion"
+    android:textSize="22sp" />
+
+<TextView
+    android:id="@+id/tvHowHandWashQuestion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/tvHowOftenQuestion"
+    android:layout_below="@+id/tvWhyBloodQuestion"
+    android:clickable="true"
+    android:onClick="toggle_contents"
+    android:text="@string/howHandWashQuestion"
+    android:textSize="22sp" />
+
+<TextView
+    android:id="@+id/tvWhenHandWashQuestion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/tvHowOftenQuestion"
+    android:layout_below="@+id/tvHowHandWashQuestion"
+    android:clickable="true"
+    android:onClick="toggle_contents"
+    android:text="@string/whenHandWashQuestion"
+    android:textSize="22sp" />
+
 </RelativeLayout>

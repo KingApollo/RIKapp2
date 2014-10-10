@@ -43,10 +43,30 @@
         <activity
             android:name=".HowOften"
             android:label="@string/title_activity_how_often" >
-            </activity>
+        </activity>
         <activity
             android:name=".Kontakt"
-            android:label="@string/title_activity_kontakt">
+            android:label="@string/title_activity_kontakt" >
+        </activity>
+        <activity
+            android:name=".WhenInBladder"
+            android:label="@string/title_activity_when_in_bladder" >
+        </activity>
+        <activity
+            android:name=".DoesItHurt"
+            android:label="@string/title_activity_does_it_hurt" >
+        </activity>
+        <activity
+            android:name=".WhenWashHands"
+            android:label="@string/title_activity_when_wash_hands" >
+        </activity>
+        <activity
+            android:name=".HowWashHands"
+            android:label="@string/title_activity_how_wash_hands" >
+        </activity>
+        <activity
+            android:name=".WhyBlood"
+            android:label="@string/title_activity_why_blood" >
         </activity>
     </application>
 

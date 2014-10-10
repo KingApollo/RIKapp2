@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RIKapp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_hyg">Hyg</string>
+    <string name="hygiejne_btn">Hygiejne</string>
+    <string name="maaling_btn">Måling</string>
+    <string name="title_activity_maalinger">Maalinger</string>
+    <string name="skema_btn">Skema</string>
+    <string name="title_activity_skema">Skema</string>
+    <string name="title_activity_information">Information</string>
+    <string name="howOftenAnswer">"Du har på sygehuset aftalt en hyppighed med sygeplejersken. Man kan ikke præcist aftale hvor mange gange man skal RIK'ke sig hver dag, idet det afhænger af årsagen til RIK. En tommelfingerregel er, at hvis du efter naturlig vandladning udtømmer mere end 100-150 ml. med kateter, kan du kateteriserer dig én gang mindre i døgnet. Den første uges tid kan det være en god idé at skrive ned, hvor meget du udtømmer. Du kan med jævne mellemrum kontrollere hvor meget du lader spontant og hvor meget du udtømmer med kateter."</string>
+    <string name="howOftenQuestion">Hvor ofte skal jeg tømme blæren ved RIK?</string>
+    <string name="test1">111111111111111111111111</string>
+    <string name="test2">22222222222222222222222222</string>
+    <string name="title_activity_how_often">HowOften</string>
+    <string name="title_activity_kontakt">Kontakt</string>
+    <string name="kontakt_btn">Kontakt</string>
+    <string name="kontakt_text">"<b>Kontakt1</b> \n Kontaktperson: kp1 \n Tlf: 12345678 \n Email: kp1@e.dk
+        \n\n<b>Kontakt2</b> \n Kontaktperson: kp2 \n Tlf: 87654321 \n Email: kp2@e.dk"</string>
+    <string name="kontakt_title">"Kontakt"</string>
+    <string name="mlInput_hint">Intast ml</string>
+    <string name="save_btn_name">Log måling</string>
+    <string name="noteInput_hint">Eventuelt note</string>
+    <string name="title_activity_when_in_bladder">WhenInBladder</string>
+    <string name="whenBladderQuestion">"Hvordan ved jeg om jeg er inde i blæren med kateteret?"</string>
+	<string name="whenBladderAnswer">"Når urinen løber ud gennem kateret i toilettet, så er du i blæren. Vær opmærksom på, at kateteret ikke er langt oppe i blæren at hullerne på spidsen af kateteret kommer over niveau med urinen inde i blæren – så kan det nemlig ikke tømmes ud. Træk derfor kateteret langsom ud igen, og hvis der kommer mere urin, så vent til det ikke løber mere. Træk derefter resten ud i et jævnt træk.</string>
+    <string name="doesItHurtQuestion">Gør det ondt at katerisere sig selv?</string>
+    <string name="doesItHurtAnswer">""Nej, det gør ikke ondt, men du kan føle lidt ubehag i begyndelsen i urinrøret eller et kortvarigt jag i blæren. Hvis du oplever sådan et jag, så kan det skyldes at blærevæggen suges tæt til kateteret i blæren, når den tømmes. Det forsvinder hurtigt igen. "</string>
+	<string name="whyBloodQuestion">Hvorfor kommer der somme tider lidt blod, når jeg kateriserer mig?</string>
+	<string name="whyBloodAnswer">Hvorfor kommer der somme tider lidt blod, når jeg kateriserer mig?</string>
+		
+	
+    
+	
+	
+</resources>

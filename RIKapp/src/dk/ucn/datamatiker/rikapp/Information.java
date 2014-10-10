@@ -30,6 +30,67 @@ public class Information extends Activity {
 				
 			}
 		});
+       
+        TextView tvWhenBladderQuestion = (TextView)findViewById(R.id.tvWhenBladderQuestion);
+        tvWhenBladderQuestion.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(Information.this, WhenInBladder.class);
+				startActivity(intent);
+			
+				
+			}
+		});
+        
+        TextView tvDoesItHurtQuestion = (TextView)findViewById(R.id.tvDoesItHurtQuestion);
+        tvDoesItHurtQuestion.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(Information.this, DoesItHurt.class);
+				startActivity(intent);
+			
+				
+			}
+		});
+        
+        TextView tvHowHandWashQuestion = (TextView)findViewById(R.id.tvHowHandWashQuestion);
+        tvHowHandWashQuestion.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(Information.this, HowWashHands.class);
+				startActivity(intent);
+			
+				
+			}
+		});
+        
+        TextView tvWhenHandWashQuestion = (TextView)findViewById(R.id.tvWhenHandWashQuestion);
+        tvWhenHandWashQuestion.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(Information.this, WhenWashHands.class);
+				startActivity(intent);
+			
+				
+			}
+		});
+        
+        TextView tvWhyBloodQuestion = (TextView)findViewById(R.id.tvWhyBloodQuestion);
+        tvWhyBloodQuestion.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(Information.this, WhyBlood.class);
+				startActivity(intent);
+			
+				
+			}
+		});
+		
         
     }
 }
