@@ -1,5 +1,10 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+<RelativeLayout 
+   
     
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,6 +12,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#008789"
     tools:context="dk.ucn.datamatiker.rikapp.Information" 
     >
     
@@ -16,10 +22,13 @@
             android:clickable="true"
             android:onClick="toggle_contents"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:background="#004A61"
+            android:layout_height="wrap_content"
+            android:textColor="#F0F0F0"/>
 
 <TextView
     android:id="@+id/tvWhenBladderQuestion"
+    android:layout_marginTop="15dp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_alignLeft="@+id/tvHowOftenQuestion"
@@ -27,10 +36,13 @@
     android:clickable="true"
     android:onClick="toggle_contents"
     android:text="@string/whenBladderQuestion"
-    android:textSize="22sp" />
+    android:textSize="22sp"
+    android:background="#004A61"
+    android:textColor="#F0F0F0" />
 
 <TextView
     android:id="@+id/tvDoesItHurtQuestion"
+    android:layout_marginTop="15dp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_alignLeft="@+id/tvHowOftenQuestion"
@@ -38,10 +50,13 @@
     android:clickable="true"
     android:onClick="toggle_contents"
     android:text="@string/doesItHurtQuestion"
-    android:textSize="22sp" />
+    android:background="#004A61"
+    android:textSize="22sp"
+    android:textColor="#F0F0F0" />
 
 <TextView
     android:id="@+id/tvWhyBloodQuestion"
+    android:layout_marginTop="15dp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_alignLeft="@+id/tvHowOftenQuestion"
@@ -49,10 +64,13 @@
     android:clickable="true"
     android:onClick="toggle_contents"
     android:text="@string/whyBloodQuestion"
-    android:textSize="22sp" />
+    android:textSize="22sp"
+    android:background="#004A61"
+    android:textColor="#F0F0F0" />
 
 <TextView
     android:id="@+id/tvHowHandWashQuestion"
+    android:layout_marginTop="15dp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_alignLeft="@+id/tvHowOftenQuestion"
@@ -60,10 +78,13 @@
     android:clickable="true"
     android:onClick="toggle_contents"
     android:text="@string/howHandWashQuestion"
-    android:textSize="22sp" />
+    android:background="#004A61"
+    android:textSize="22sp"
+    android:textColor="#F0F0F0" />
 
 <TextView
     android:id="@+id/tvWhenHandWashQuestion"
+    android:layout_marginTop="15dp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_alignLeft="@+id/tvHowOftenQuestion"
@@ -71,6 +92,87 @@
     android:clickable="true"
     android:onClick="toggle_contents"
     android:text="@string/whenHandWashQuestion"
-    android:textSize="22sp" />
+    android:textSize="22sp"
+    android:background="#004A61"
+    android:textColor="#F0F0F0" />
+
+<TextView   android:id="@+id/tvWhenToWashQuestion"
+            android:text="@string/whenToWashQuestion"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tvWhenHandWashQuestion"
+            android:layout_alignLeft="@+id/tvHowOftenQuestion" 
+            android:textSize="22sp"
+            android:clickable="true"
+            android:onClick="toggle_contents"
+            android:layout_width="wrap_content"
+            android:background="#004A61"
+            android:layout_height="wrap_content"
+            android:textColor="#F0F0F0"/>
+
+<TextView   android:id="@+id/tvWhereToTouchQuestion"
+            android:text="@string/whereToTouchQuestion"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tvWhenToWashQuestion"
+            android:layout_alignLeft="@+id/tvHowOftenQuestion" 
+            android:textSize="22sp"
+            android:clickable="true"
+            android:onClick="toggle_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#004A61"
+            android:textColor="#F0F0F0"/>
+
+<TextView   android:id="@+id/tvWhichSymptomsQuestion"
+            android:text="@string/whichSymptomsQuestion"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tvWhereToTouchQuestion"
+            android:layout_alignLeft="@+id/tvHowOftenQuestion" 
+            android:textSize="22sp"
+            android:clickable="true"
+            android:onClick="toggle_contents"
+            android:layout_width="wrap_content"
+            android:background="#004A61"
+            android:layout_height="wrap_content"
+            android:textColor="#F0F0F0"/>
+
+<TextView   android:id="@+id/tvIfInfectedQuestion"
+            android:text="@string/ifInfectedQuestion"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tvWhichSymptomsQuestion"
+            android:layout_alignLeft="@+id/tvHowOftenQuestion" 
+            android:textSize="22sp"
+            android:clickable="true"
+            android:onClick="toggle_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#004A61"
+            android:textColor="#F0F0F0"/>
+
+<TextView   android:id="@+id/tvAvoidInfectionQuestion"
+            android:text="@string/avoidInfectionQuestion"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tvIfInfectedQuestion"
+            android:layout_alignLeft="@+id/tvHowOftenQuestion" 
+            android:textSize="22sp"
+            android:clickable="true"
+            android:onClick="toggle_contents"
+            android:layout_width="wrap_content"
+            android:background="#004A61"
+            android:layout_height="wrap_content"
+            android:textColor="#F0F0F0"/>
+
+<TextView   android:id="@+id/tvWhenOutQuestion"
+            android:text="@string/whenOutQuestion"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tvAvoidInfectionQuestion"
+            android:layout_alignLeft="@+id/tvHowOftenQuestion" 
+            android:textSize="22sp"
+            android:clickable="true"
+            android:onClick="toggle_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#004A61"
+            android:textColor="#F0F0F0"/>
 
 </RelativeLayout>
+</ScrollView>

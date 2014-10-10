@@ -68,6 +68,30 @@
             android:name=".WhyBlood"
             android:label="@string/title_activity_why_blood" >
         </activity>
+        <activity
+            android:name=".WhenToWash"
+            android:label="@string/title_activity_when_to_wash" >
+        </activity>
+        <activity
+            android:name=".AvoidInfection"
+            android:label="@string/title_activity_avoid_infection" >
+        </activity>
+        <activity
+            android:name=".IfInfected"
+            android:label="@string/title_activity_if_infected" >
+        </activity>
+        <activity
+            android:name=".WhenOut"
+            android:label="@string/title_activity_when_out" >
+        </activity>
+        <activity
+            android:name=".WhereToTouch"
+            android:label="@string/title_activity_where_to_touch" >
+        </activity>
+        <activity
+            android:name=".WhichSymptoms"
+            android:label="@string/title_activity_which_symptoms" >
+        </activity>
     </application>
 
 </manifest>

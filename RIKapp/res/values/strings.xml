@@ -13,8 +13,18 @@
     <string name="title_activity_information">Information</string>
     <string name="howOftenAnswer">"Du har på sygehuset aftalt en hyppighed med sygeplejersken. Man kan ikke præcist aftale hvor mange gange man skal RIK'ke sig hver dag, idet det afhænger af årsagen til RIK. En tommelfingerregel er, at hvis du efter naturlig vandladning udtømmer mere end 100-150 ml. med kateter, kan du kateteriserer dig én gang mindre i døgnet. Den første uges tid kan det være en god idé at skrive ned, hvor meget du udtømmer. Du kan med jævne mellemrum kontrollere hvor meget du lader spontant og hvor meget du udtømmer med kateter."</string>
     <string name="howOftenQuestion">Hvor ofte skal jeg tømme blæren ved RIK?</string>
-    <string name="test1">111111111111111111111111</string>
-    <string name="test2">22222222222222222222222222</string>
+    <string name="whenToWashAnswer">"Det skal du, hvis der er synlig snavs. Hvis der ikke er synlig snavs, så er det nok at vaske dig 1 gang dagligt med vand og evt. en mild sæbe beregnet til formålet."</string>
+    <string name="whenToWashQuestion">Hvornår skal jeg vaske penis og urinrørsåbningen inden udtømning af urin?</string>
+    <string name="whereToTouchAnswer">"Du må kun røre på det yderste af kateteret – der hvor der ses et slags ”håndtag” – en studs. Det ser forskelligt ud fra kateter til kateter. Det vigtigt for at forebygge en infektion i urinvejene, at du ikke rører på selve kateteret, som skal føres gennem urinrøret til blæren."</string>
+    <string name="whereToTouchQuestion">Hvor må jeg røre på kateteret?</string>
+    <string name="whichSymptomsAnswer">"Du kan mærke svie og smerte ved vandladning. Du kan også opleve hyppige, små vandladninger, eller en pludselig voldsom trang. Du kan måske se, at urinen er uklar og grumset. Måske har du også en lille smule feber eller føler dig lidt utilpas."</string>
+    <string name="whichSymptomsQuestion">Hvilke symptomer kan jeg mærke, hvis jeg har en infektion i urinvejene?</string>
+    <string name="ifInfectedAnswer">"Hvis din læge har konstateret en urinvejsinfektion skal du følge lægens anvisninger og behandling. Derudover er det vigtigt at du drikker rigeligt, fordi det er med til at skylle bakterierne ud sammen med urinen. Det er også vigtigt at du i en kort periode kateriserer dig nogle ekstra gange for at undgå, at der står urin i blæren, som bakterierne hurtigt kan formere sig i. Det kan også hjælpe at drikke tranebærjuice svarende til 1,5 -2 glas dagligt = 300 ml dagligt."</string>
+    <string name="ifInfectedQuestion">Hvad kan jeg gøre selv hvis jeg har en urinvejsinfektion?</string>
+    <string name="avoidInfectionAnswer">"Der er nogle få ting du kan gøre, men som har meget stor betydning for at forebygge en urinvejsinfektion. Det er meget vigtigt med en god hygiejne. Det vil sige at håndvask før og efter er vigtigt, og afvask ved urinrørsåbningen ved synlig snavs og ellers 1 gang dagligt er vigtigt. Det er også vigtigt at forhuden trækkes helt tilbage inden du indfører kateteret. Sidst men ikke mindst er det meget vigtigt, at du kun berører kateteret på den studs der er beregnet til det ved indføringen."</string>
+    <string name="avoidInfectionQuestion">Hvad kan jeg gøre for at undgå at få en infektion i urinvejene?</string>
+    <string name="whenOutAnswer">"Du gør som du gør derhjemme. Det kan være en idé at medbringe vådservietter og en flaske håndsprit (kan købes på apoteker eller Matas butikker)i en lille toilettaske. Overvej inden du går i gang, hvordan det vil være praktisk at gribe det an på et fremmed toilet eller badeværelse. Det er vigtigt, at du overholder de samme procedurer for håndvask, vask af urinrørsåbning ved synlig snavs og selve udførelsen, som du gør i de vante omgivelser."</string>
+    <string name="whenOutQuestion">Hvad gør jeg, når jeg er i byen?</string>
     <string name="title_activity_how_often">HowOften</string>
     <string name="title_activity_kontakt">Kontakt</string>
     <string name="kontakt_btn">Kontakt</string>
@@ -39,5 +49,11 @@
     <string name="title_activity_when_wash_hands">WhenWashHands</string>
     <string name="title_activity_how_wash_hands">HowWashHands</string>
     <string name="title_activity_why_blood">WhyBlood</string>
+    <string name="title_activity_when_to_wash">WhenToWash</string>
+    <string name="title_activity_avoid_infection">AvoidInfection</string>
+    <string name="title_activity_if_infected">IfInfected</string>
+    <string name="title_activity_when_out">WhenOut</string>
+    <string name="title_activity_where_to_touch">WhereToTouch</string>
+    <string name="title_activity_which_symptoms">WhichSymptoms</string>
 
 </resources>
