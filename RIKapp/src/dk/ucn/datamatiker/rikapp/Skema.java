@@ -1,16 +1,37 @@
 package dk.ucn.datamatiker.rikapp;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class Skema extends Activity {
+	
+	private String newestDate = "";
+	private ArrayList<Maaling> maalList = new ArrayList<Maaling>();
+	private ArrayList<ArrayList> maalDate = new ArrayList<ArrayList>();
+	private ArrayList<Maaling> dbMaalList = new ArrayList<Maaling>();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_skema);
+		
+		Button printAllSkema = (Button)findViewById(R.id.printAllSkema);
+        printAllSkema.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+			
+				sortAllMaal(); 
+				
+			}
+		});
 	}
 
 	@Override
@@ -30,5 +51,41 @@ public class Skema extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+		
 	}
+	
+	public void sortAllMaal(){
+		
+		MySQLiteHelper db = new MySQLiteHelper(getApplicationContext());
+		dbMaalList = db.getAllMaalinger();
+		for(int i=0;i<dbMaalList.size();i++){
+			if(newestDate.equals(dbMaalList.get(i).getDate())){
+				
+				maalList.add(dbMaalList.get(i));
+				
+			}else{
+				maalDate.add(maalList);
+				maalList = null;
+				newestDate = dbMaalList.get(i).getDate();
+				maalList = new ArrayList<Maaling>();
+				maalList.add(dbMaalList.get(i));
+				
+			}
+		}
+			
+		for(int i = 0; i< maalDate.size(); i++)
+		{
+			  System.out.println("Dette er dato nr = " + i);
+		      for(int k = 0; k < maalDate.get(i).size(); k++)
+		      {
+		           Maaling m = (Maaling) maalDate.get(i).get(k);
+		           System.out.println("Målingen blev lavet den " + m.getDate() + " kl " + m.getTime());
+		      }
+		}
+			
+		}
+		
+		
+	
+	
 }
