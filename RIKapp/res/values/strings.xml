@@ -15,5 +15,8 @@
     <string name="kontakt_text">"<b>Kontakt1</b> \n Kontaktperson: kp1 \n Tlf: 12345678 \n Email: kp1@e.dk
         \n\n<b>Kontakt2</b> \n Kontaktperson: kp2 \n Tlf: 87654321 \n Email: kp2@e.dk"</string>
     <string name="kontakt_title">"Kontakt"</string>
+    <string name="mlInput_hint">Intast ml</string>
+    <string name="save_btn_name">Log måling</string>
+    <string name="noteInput_hint">Eventuelt note</string>
 
 </resources>

@@ -14,7 +14,6 @@ public class Maaling{
 	
 	public Maaling(int id, String time, String date, int ml, String note)
 	{
-		
 		this.id = id;
 		this.time = time;
 		this.date = date;
@@ -28,13 +27,6 @@ public class Maaling{
 		this.date = date;
 		this.ml = ml;
 		this.note = note;
-	}
-	
-	public Maaling(String time, String date, int ml)
-	{
-		this.time = time;
-		this.date = date;
-		this.ml = ml;
 	}
 	
 	public void setNote(String note)

@@ -6,6 +6,7 @@ import java.util.Calendar;
 import java.util.Locale;
 
 import android.app.Activity;
+import android.content.Context;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -14,6 +15,7 @@ import android.view.View;
 
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Maalinger extends Activity {
 	
@@ -44,6 +46,7 @@ public class Maalinger extends Activity {
 			@Override
 			public void onClick(View v) {
 				TextView mlInput = (TextView) findViewById(R.id.mlInput);
+				TextView noteInput = (TextView) findViewById(R.id.noteInput);
 				if(mlInput.length() > 0)
 				{
 				SimpleDateFormat df = new SimpleDateFormat("dd/M");
@@ -52,11 +55,21 @@ public class Maalinger extends Activity {
 				MySQLiteHelper db = new MySQLiteHelper(v.getContext());
 				String date = df.format(c.getTime());
 				String time = tf.format(c.getTime());
-				Maaling m = new Maaling(time,date, Integer.parseInt(mlInput.getText().toString()));
+				String note = noteInput.getText().toString();
+				Maaling m = new Maaling(time,date, Integer.parseInt(mlInput.getText().toString()),note);
 				
 				db.insertMaaling(m);
 				mlInput.setText(null);
 				mlInput.clearFocus();
+				noteInput.setText(null);
+				noteInput.clearFocus();
+				
+				Context context = getApplicationContext();
+				CharSequence text = "Måling for " + m.getDate() + " kl" + m.getTime() +" er logget";
+				int duration = Toast.LENGTH_LONG;
+				
+				Toast toast = Toast.makeText(context, text, duration);
+				toast.show();
 				}
 				}
 		});
