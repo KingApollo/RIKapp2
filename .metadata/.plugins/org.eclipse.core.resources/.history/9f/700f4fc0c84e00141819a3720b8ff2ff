@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RIKapp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_hyg">Hyg</string>
+    <string name="hygiejne_btn">Hygiejne</string>
+    <string name="maaling_btn">Måling</string>
+    <string name="title_activity_maalinger">Maalinger</string>
+    <string name="skema_btn">Skema</string>
+    <string name="title_activity_skema">Skema</string>
+
+</resources>

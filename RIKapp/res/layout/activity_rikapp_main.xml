@@ -38,4 +38,13 @@
         android:layout_marginTop="37dp"
         android:text="@string/skema_btn" />
 
+    <Button
+        android:id="@+id/btnInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hygbtn"
+        android:layout_alignTop="@+id/skemabtn"
+        android:layout_toLeftOf="@+id/maalbtn"
+        android:text="Info" />
+
 </RelativeLayout>

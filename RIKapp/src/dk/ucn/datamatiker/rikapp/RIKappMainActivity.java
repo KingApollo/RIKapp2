@@ -46,6 +46,19 @@ public class RIKappMainActivity extends Activity {
 		    	startActivity(intent);
 			}
 		});
+        
+        Button btnInfo = (Button)findViewById(R.id.btnInfo);
+        btnInfo.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(RIKappMainActivity.this, Information.class);
+				startActivity(intent);
+			
+				
+			}
+		});
+        
     }
 
 

@@ -36,6 +36,14 @@
             android:name=".Skema"
             android:label="@string/title_activity_skema" >
         </activity>
+        <activity
+            android:name=".Information"
+            android:label="@string/title_activity_information" >
+        </activity>
+        <activity
+            android:name=".HowOften"
+            android:label="@string/title_activity_how_often" >
+        </activity>
     </application>
 
 </manifest>
