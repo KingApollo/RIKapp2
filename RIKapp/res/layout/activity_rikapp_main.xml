@@ -39,6 +39,7 @@
         android:text="@string/skema_btn" />
 
     <Button
+<<<<<<< HEAD
         android:id="@+id/btnInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,5 +47,15 @@
         android:layout_alignTop="@+id/skemabtn"
         android:layout_toLeftOf="@+id/maalbtn"
         android:text="Info" />
+=======
+        android:id="@+id/kontaktbtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/skemabtn"
+        android:layout_below="@+id/skemabtn"
+        android:layout_marginTop="67dp"
+        android:text="@string/kontakt_btn" />
+>>>>>>> 6b0e8f6748448198b77264b1c286dcdc3a379beb
 
 </RelativeLayout>

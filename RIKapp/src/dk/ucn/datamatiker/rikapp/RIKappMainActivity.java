@@ -47,6 +47,7 @@ public class RIKappMainActivity extends Activity {
 			}
 		});
         
+<<<<<<< HEAD
         Button btnInfo = (Button)findViewById(R.id.btnInfo);
         btnInfo.setOnClickListener(new View.OnClickListener() {
 			
@@ -59,6 +60,17 @@ public class RIKappMainActivity extends Activity {
 			}
 		});
         
+=======
+        Button kontaktBtn = (Button)findViewById(R.id.kontaktbtn);
+        kontaktBtn.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(RIKappMainActivity.this, Kontakt.class);
+		    	startActivity(intent);
+			}
+		});
+>>>>>>> 6b0e8f6748448198b77264b1c286dcdc3a379beb
     }
 
 
