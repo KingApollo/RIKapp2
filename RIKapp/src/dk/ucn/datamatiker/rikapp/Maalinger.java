@@ -25,22 +25,6 @@ public class Maalinger extends Activity {
 		
 		setContentView(R.layout.activity_maalinger);
 		
-		Button getAll = (Button)findViewById(R.id.getAll);
-		getAll.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				Button getAll = (Button)findViewById(R.id.getAll);
-				getAll.setSelected(true);
-				MySQLiteHelper db = new MySQLiteHelper(v.getContext());
-				ArrayList<Maaling> mList = new ArrayList<Maaling>();
-				mList = db.getAllMaalinger();
-				for(int i = 0; i < mList.size(); i++)
-				{
-					System.out.println("TIME= " + mList.get(i).getTime() + " DATE= " + mList.get(i).getDate());
-				}
-			}
-		});
-		
 		Button createBtn = (Button)findViewById(R.id.Save_btn);
         createBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -55,7 +39,7 @@ public class Maalinger extends Activity {
 				MySQLiteHelper db = new MySQLiteHelper(v.getContext());
 				String date = df.format(c.getTime());
 				String time = tf.format(c.getTime());
-				String note = noteInput.getText().toString();
+				String note = noteInput.getText().toString().trim();
 				Maaling m = new Maaling(time,date, Integer.parseInt(mlInput.getText().toString()),note);
 				
 				db.insertMaaling(m);
@@ -70,6 +54,11 @@ public class Maalinger extends Activity {
 				
 				Toast toast = Toast.makeText(context, text, duration);
 				toast.show();
+				finish();
+				}else{
+					String needMLInput = "FEJL: Intast ML";
+					Toast toast = Toast.makeText(getApplicationContext(), needMLInput, Toast.LENGTH_LONG);
+					toast.show();
 				}
 				}
 		});

@@ -22,7 +22,7 @@
         \n\n<b>Kontakt2</b> \n Kontaktperson: kp2 \n Tlf: 87654321 \n Email: kp2@e.dk"</string>
     <string name="kontakt_title">"Kontakt"</string>
     <string name="mlInput_hint">Intast ml</string>
-    <string name="save_btn_name">Log måling</string>
+    <string name="save_btn_name">Gem måling</string>
     <string name="noteInput_hint">Eventuelt note</string>
     <string name="title_activity_when_in_bladder">WhenInBladder</string>
     <string name="whenBladderQuestion">"Hvordan ved jeg om jeg er inde i blæren med kateteret?"</string>
@@ -39,5 +39,6 @@
     <string name="title_activity_when_wash_hands">WhenWashHands</string>
     <string name="title_activity_how_wash_hands">HowWashHands</string>
     <string name="title_activity_why_blood">WhyBlood</string>
+    <string name="maalMainText">Ny måling</string>
 
 </resources>

@@ -8,32 +8,23 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="dk.ucn.datamatiker.rikapp.Maalinger" >
 
-    <Button
-        android:id="@+id/Save_btn"
+    <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/getAll"
-        android:layout_alignBottom="@+id/getAll"
-        android:layout_alignRight="@+id/mlInput"
-        android:text="@string/save_btn_name" />
-
-    <Button
-        android:id="@+id/getAll"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="60dp"
-        android:layout_marginLeft="34dp"
-        android:text="PrintAllConsole" />
+        android:layout_alignLeft="@+id/mlInput"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/maalMainText"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
         android:id="@+id/mlInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/getAll"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="85dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/mlInput_hint"
         android:inputType="number" />
@@ -43,13 +34,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/mlInput"
-        android:layout_alignRight="@+id/mlInput"
         android:layout_below="@+id/mlInput"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="15dp"
         android:ems="10"
         android:hint="@string/noteInput_hint"
-        android:inputType="textMultiLine" />
+        android:inputType="textMultiLine" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/Save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/noteInput"
+        android:layout_below="@+id/noteInput"
+        android:layout_marginTop="14dp"
+        android:text="@string/save_btn_name" />
 
 </RelativeLayout>
-
-
