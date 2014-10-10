@@ -25,9 +25,10 @@ public class Maalinger extends Activity {
 		
 		Button getAll = (Button)findViewById(R.id.getAll);
 		getAll.setOnClickListener(new View.OnClickListener() {
-			
 			@Override
 			public void onClick(View v) {
+				Button getAll = (Button)findViewById(R.id.getAll);
+				getAll.setSelected(true);
 				MySQLiteHelper db = new MySQLiteHelper(v.getContext());
 				ArrayList<Maaling> mList = new ArrayList<Maaling>();
 				mList = db.getAllMaalinger();
@@ -42,19 +43,21 @@ public class Maalinger extends Activity {
         createBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				TextView mlInput = (TextView) findViewById(R.id.mlInput);
+				if(mlInput.length() > 0)
+				{
 				SimpleDateFormat df = new SimpleDateFormat("dd/M");
 				SimpleDateFormat tf = new SimpleDateFormat("HH:mm");
 				Calendar c = Calendar.getInstance();
 				MySQLiteHelper db = new MySQLiteHelper(v.getContext());
-				
-				TextView mlInput = (TextView) findViewById(R.id.mlInput);
 				String date = df.format(c.getTime());
 				String time = tf.format(c.getTime());
 				Maaling m = new Maaling(time,date, Integer.parseInt(mlInput.getText().toString()));
 				
 				db.insertMaaling(m);
-				mlInput.setText("");
+				mlInput.setText(null);
 				mlInput.clearFocus();
+				}
 				}
 		});
 	}
