@@ -37,17 +37,16 @@
             android:label="@string/title_activity_skema" >
         </activity>
         <activity
-<<<<<<< HEAD
             android:name=".Information"
             android:label="@string/title_activity_information" >
         </activity>
         <activity
             android:name=".HowOften"
             android:label="@string/title_activity_how_often" >
-=======
+            </activity>
+        <activity
             android:name=".Kontakt"
-            android:label="@string/title_activity_kontakt" >
->>>>>>> 6b0e8f6748448198b77264b1c286dcdc3a379beb
+            android:label="@string/title_activity_kontakt">
         </activity>
     </application>
 
