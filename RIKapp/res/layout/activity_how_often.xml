@@ -6,6 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#008789"
     tools:context="dk.ucn.datamatiker.rikapp.InfoSites.HowOften" >
 
  <TextView
@@ -14,7 +15,8 @@
     android:layout_height="wrap_content"
     android:text="@string/howOftenQuestion"
     android:textSize="22sp"
-    android:textStyle="bold" />
+    android:textStyle="bold"
+    android:textColor="#004A61" />
  
   <TextView
     android:id="@+id/tvHowOftenAnswer"
@@ -23,7 +25,7 @@
     android:text="@string/howOftenAnswer"
     android:layout_below="@+id/tvHowOftenQuestion"
     android:textSize="18sp"
-    />
+    android:textColor="#F0F0F0"/>
  
  
 

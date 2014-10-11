@@ -6,6 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#008789"
     tools:context="dk.ucn.datamatiker.rikapp.InfoSites.WhenWashHands" >
     
      <TextView
@@ -14,7 +15,8 @@
     android:layout_height="wrap_content"
     android:text="@string/whenHandWashQuestion"
     android:textSize="22sp"
-    android:textStyle="bold" />
+    android:textStyle="bold"
+    android:textColor="#004A61" />
  
   <TextView
     android:id="@+id/tvWhenHandWashAnswer"
@@ -23,6 +25,6 @@
     android:text="@string/whenHandWashAnswer"
     android:layout_below="@+id/tvWhenHandWashQuestion"
     android:textSize="18sp"
-    />
+    android:textColor="#F0F0F0"/>
 
 </RelativeLayout>
