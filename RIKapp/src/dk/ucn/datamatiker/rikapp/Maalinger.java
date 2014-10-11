@@ -1,9 +1,7 @@
 package dk.ucn.datamatiker.rikapp;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Locale;
 
 import android.app.Activity;
 import android.content.Context;

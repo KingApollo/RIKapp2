@@ -56,5 +56,7 @@
     <string name="title_activity_when_out">WhenOut</string>
     <string name="title_activity_where_to_touch">WhereToTouch</string>
     <string name="title_activity_which_symptoms">WhichSymptoms</string>
+    <string name="title_activity_testslet">TESTSLET</string>
+    <string name="skema_txt">Alle gemte målinger</string>
 
 </resources>

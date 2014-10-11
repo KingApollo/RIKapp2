@@ -29,6 +29,11 @@ public class Maaling{
 		this.note = note;
 	}
 	
+	public int getID()
+	{
+		return this.id;
+	}
+	
 	public void setNote(String note)
 	{
 		this.note = note;

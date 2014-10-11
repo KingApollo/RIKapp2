@@ -85,7 +85,7 @@
             android:label="@string/title_activity_when_out" >
         </activity>
         <activity
-            android:name=".WhereToTouch"
+            android:name=".infoSites.WhereToTouch"
             android:label="@string/title_activity_where_to_touch" >
         </activity>
         <activity

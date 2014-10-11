@@ -6,22 +6,48 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbars="vertical"
+    android:background="#008789"
     tools:context="dk.ucn.datamatiker.rikapp.Skema" >
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:fillViewport="true"
+        android:scrollbars="horizontal|vertical" >
+        
+    <HorizontalScrollView 
+        android:id="@+id/horizontalView" 
+        android:layout_height="wrap_content"     
+        android:scrollbars="horizontal|vertical" 
+        android:layout_width="wrap_content"     
+        android:layout_marginTop="5dip">
+
+	<TableLayout
+	    android:id="@+id/skema_tableView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/textView1"
+	    android:scrollbars="horizontal|vertical" >
+	</TableLayout>
+	</HorizontalScrollView>
+	</ScrollView>
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-
-    <Button
-        android:id="@+id/printAllSkema"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="80dp"
-        android:layout_toRightOf="@+id/textView1"
-        android:text="Button" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/skema_txt"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
