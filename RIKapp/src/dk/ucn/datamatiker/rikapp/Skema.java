@@ -68,17 +68,17 @@ public class Skema extends Activity {
 				newestDate = dbMaalList.get(i).getDate();
 				maalList = new ArrayList<Maaling>();
 				maalList.add(dbMaalList.get(i));
-				
 			}
 		}
-			
+		maalDate.add(maalList);
+		
 		for(int i = 0; i< maalDate.size(); i++)
 		{
-			  System.out.println("Dette er dato nr = " + i);
+			  //System.out.println("Dette er dato nr = " + i);
 		      for(int k = 0; k < maalDate.get(i).size(); k++)
 		      {
 		           Maaling m = (Maaling) maalDate.get(i).get(k);
-		           System.out.println("Målingen blev lavet den " + m.getDate() + " kl " + m.getTime());
+		           //System.out.println("Målingen blev lavet den " + m.getDate() + " kl " + m.getTime());
 		      }
 		}
 		return this.maalDate;

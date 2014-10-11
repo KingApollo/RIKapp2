@@ -1,6 +1,7 @@
 package dk.ucn.datamatiker.rikapp;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 
 import android.app.Activity;
@@ -45,6 +46,11 @@ public class Maalinger extends Activity {
 				mlInput.clearFocus();
 				noteInput.setText(null);
 				noteInput.clearFocus();
+				
+				//KUN FOR TEST SKAL SLETTES!!!!
+				ArrayList<Maaling> testList = db.getAllMaalinger();
+				System.out.println(testList.get(testList.size() -1).getDate() + " kl " + testList.get(testList.size() -1).getTime() + " note " + testList.get(testList.size() -1).getNote());
+				//HER TIL!!
 				
 				Context context = getApplicationContext();
 				CharSequence text = "Måling for " + m.getDate() + " kl" + m.getTime() +" er logget";
