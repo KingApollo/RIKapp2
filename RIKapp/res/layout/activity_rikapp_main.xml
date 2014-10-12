@@ -56,4 +56,13 @@
         android:layout_marginTop="67dp"
         android:text="@string/kontakt_btn" />
 
+     <Button
+         android:id="@+id/videobtn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/kontaktbtn"
+         android:layout_alignLeft="@+id/btnInfo"
+         android:layout_alignRight="@+id/btnInfo"
+         android:text="@string/videobtn" />
+
 </RelativeLayout>

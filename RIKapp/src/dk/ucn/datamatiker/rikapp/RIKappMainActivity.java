@@ -68,6 +68,16 @@ public class RIKappMainActivity extends Activity {
 		    	startActivity(intent);
 			}
 		});
+        
+        Button videobtn = (Button)findViewById(R.id.videobtn);
+        videobtn.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(RIKappMainActivity.this, Video.class);
+				startActivity(intent);
+			}
+		});
     }
 
 

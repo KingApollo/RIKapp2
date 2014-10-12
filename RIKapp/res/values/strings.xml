@@ -57,6 +57,9 @@
     <string name="title_activity_where_to_touch">WhereToTouch</string>
     <string name="title_activity_which_symptoms">WhichSymptoms</string>
     <string name="title_activity_testslet">TESTSLET</string>
+    <string name="title_video">Video</string>
     <string name="skema_txt">Alle gemte målinger</string>
+    <string name="video_intro">I videoen ovenfor vil du trin for trin kunne følge hvordan man skal håndtere og anvende kateteret.</string>
+    <string name="videobtn">Video</string>
 
 </resources>
