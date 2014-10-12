@@ -6,63 +6,83 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#008789"
     tools:context="dk.ucn.datamatiker.rikapp.RIKappMainActivity" >
 
     <Button
-        android:id="@+id/maalbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/hygbtn"
-        android:layout_alignBottom="@+id/hygbtn"
-        android:layout_marginLeft="45dp"
-        android:layout_toRightOf="@+id/hygbtn"
-        android:text="@+string/maaling_btn" />
-
-    <Button
-        android:id="@+id/hygbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="76dp"
-        android:text="@+string/hygiejne_btn" />
-
-    <Button
-        android:id="@+id/skemabtn"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/maalbtn"
-        android:layout_below="@+id/maalbtn"
-        android:layout_marginTop="37dp"
-        android:text="@string/skema_btn" />
+        android:id="@+id/videobtn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/btnInfo"
+        android:layout_below="@+id/hygbtn"
+        android:layout_marginTop="20dp"
+        android:textColor="#F0F0F0" 
+        android:background="#8F8E91"
+        android:text="@string/videobtn" />
 
     <Button
         android:id="@+id/btnInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/hygbtn"
-        android:layout_alignTop="@+id/skemabtn"
-        android:layout_toLeftOf="@+id/maalbtn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/videobtn"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#F0F0F0" 
+        android:background="#8F8E91"
         android:text="Info" />
-     <Button
+
+    <Button
         android:id="@+id/kontaktbtn"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/skemabtn"
-        android:layout_below="@+id/skemabtn"
-        android:layout_marginTop="67dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/btnInfo"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/btnInfo"
+        android:textColor="#F0F0F0" 
+        android:background="#8F8E91"
         android:text="@string/kontakt_btn" />
 
-     <Button
-         android:id="@+id/videobtn"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignBottom="@+id/kontaktbtn"
-         android:layout_alignLeft="@+id/btnInfo"
-         android:layout_alignRight="@+id/btnInfo"
-         android:text="@string/videobtn" />
+    <Button
+        android:id="@+id/hygbtn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignBaseline="@+id/maalbtn"
+        android:layout_alignBottom="@+id/maalbtn"
+        android:layout_alignLeft="@+id/videobtn"
+        android:background="#004A61"
+        android:textColor="#F0F0F0" 
+        android:text="@+string/hygiejne_btn" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/rik_help_app"
+        android:textColor="#F0F0F0" 
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/maalbtn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/kontaktbtn"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="30dp"
+        android:background="#004A61"
+        android:textColor="#F0F0F0" 
+        android:text="@+string/maaling_btn" />
+
+    <Button
+        android:id="@+id/skemabtn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btnInfo"
+        android:layout_alignLeft="@+id/kontaktbtn"
+        android:text="@string/skema_btn"
+        android:textColor="#F0F0F0" 
+        android:background="#8F8E91"/>
 
 </RelativeLayout>

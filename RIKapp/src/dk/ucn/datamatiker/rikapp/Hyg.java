@@ -1,9 +1,12 @@
 package dk.ucn.datamatiker.rikapp;
 
 import android.app.Activity;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.MediaController;
+import android.widget.VideoView;
 
 public class Hyg extends Activity {
 
@@ -11,6 +14,12 @@ public class Hyg extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_hyg);
+		
+		VideoView vidV = (VideoView) findViewById(R.id.hygiejneVideo);
+	    vidV.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.hygiejne_film);
+		vidV.setMediaController(new MediaController(this));
+		vidV.requestFocus();		
+		vidV.pause();		
 	}
 
 	@Override

@@ -3,6 +3,8 @@ package dk.ucn.datamatiker.rikapp;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -117,6 +119,7 @@ public class Skema extends Activity {
 	            
 				for(int k = 0; k < maalList.get(i).size(); k++){
 					m = (Maaling) maalList.get(i).get(k);
+					final Maaling mFinal = m;
 					Button b = new Button(this);
 					b.setText("kl " + m.getTime());
 					b.setTextColor(Color.BLUE);
@@ -126,9 +129,11 @@ public class Skema extends Activity {
 					b.setOnClickListener(new View.OnClickListener() {
 						@Override
 						public void onClick(View v) {
-							Toast toast = Toast.makeText(getApplicationContext(), "DEN VIRKER!!!", Toast.LENGTH_LONG);
-							toast.show();
-							
+							AlertDialog.Builder aBuilder = new AlertDialog.Builder(Skema.this);
+							aBuilder.setTitle("Måling for dato " + mFinal.getDate() + " kl " + mFinal.getTime());
+							aBuilder.setMessage("Note: " + mFinal.getNote());
+							AlertDialog ad = aBuilder.create();
+							ad.show();
 						}
 					});
 					tr.addView(b,pMargin);

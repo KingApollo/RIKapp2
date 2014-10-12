@@ -21,15 +21,5 @@ public class Video extends Activity {
 		vid.setMediaController(new MediaController(this));
 		vid.requestFocus();
 		vid.pause();
-		
-		Button mainmenubtn = (Button)findViewById(R.id.main_menu_btn);
-		mainmenubtn.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				Intent intent = new Intent(Video.this, RIKappMainActivity.class);
-				startActivity(intent);
-			}
-		});
 	}
 }
