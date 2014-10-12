@@ -131,7 +131,11 @@ public class Skema extends Activity {
 						public void onClick(View v) {
 							AlertDialog.Builder aBuilder = new AlertDialog.Builder(Skema.this);
 							aBuilder.setTitle("Måling for dato " + mFinal.getDate() + " kl " + mFinal.getTime());
-							aBuilder.setMessage("Note: " + mFinal.getNote());
+							if(mFinal.getNote().length() < 1){
+								aBuilder.setMessage("Note: " + mFinal.getNote());	
+							}else{
+								aBuilder.setMessage("Note: Ingen note tilføjet ");
+							}
 							AlertDialog ad = aBuilder.create();
 							ad.show();
 						}
