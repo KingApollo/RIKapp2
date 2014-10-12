@@ -93,7 +93,7 @@
             android:label="@string/title_activity_which_symptoms" >
         </activity>
         <activity
-            android:name="Video"
+            android:name=".Video"
             android:label="@string/title_video" >
         </activity>
     </application>
