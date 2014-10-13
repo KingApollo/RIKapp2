@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#008789"
@@ -8,15 +8,17 @@
     <VideoView
         android:id="@+id/stepVideo"
         android:layout_width="match_parent"
-        android:layout_height="71dp"
-        android:layout_weight="0.08" />
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="@string/video_intro"
         android:textColor="#F0F0F0"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        android:layout_below="@+id/stepVideo" />
 
 
-</LinearLayout>
+</RelativeLayout>

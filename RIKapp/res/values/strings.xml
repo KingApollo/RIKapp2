@@ -9,6 +9,7 @@
     <string name="maaling_btn">Måling</string>
     <string name="title_activity_maalinger">Maalinger</string>
     <string name="skema_btn">Skema</string>
+    <string name="info_btn">Info</string>
     <string name="title_activity_skema">Skema</string>
     <string name="title_activity_information">Information</string>
     <string name="howOftenAnswer">"Du har på sygehuset aftalt en hyppighed med sygeplejersken. Man kan ikke præcist aftale hvor mange gange man skal RIK'ke sig hver dag, idet det afhænger af årsagen til RIK. En tommelfingerregel er, at hvis du efter naturlig vandladning udtømmer mere end 100-150 ml. med kateter, kan du kateteriserer dig én gang mindre i døgnet. Den første uges tid kan det være en god idé at skrive ned, hvor meget du udtømmer. Du kan med jævne mellemrum kontrollere hvor meget du lader spontant og hvor meget du udtømmer med kateter."</string>

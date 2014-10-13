@@ -30,7 +30,7 @@
         android:layout_marginTop="25dp"
         android:textColor="#F0F0F0" 
         android:background="#8F8E91"
-        android:text="Info" />
+        android:text="@string/info_btn" />
 
     <Button
         android:id="@+id/kontaktbtn"
